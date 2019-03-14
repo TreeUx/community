@@ -58,7 +58,7 @@ public class Index {
         } catch (Exception e) {
             result.put("code", Constant.SUCC_CODE);
             result.put("msg", Constant.SUCC_MSG);
-            logger.error("[操作异常-Msg:]" + e);
+            logger.error("[操作异常-Msg:]" + e.getMessage());
         }
         return result;
     }
